@@ -5,8 +5,8 @@
 
 Summary:	Mass virtual hosting module mapping host names to a directory tree
 Name:		apache-%{mod_name}
-Version:	1.5
-Release:	%mkrel 2
+Version:	1.6
+Release:	%mkrel 1
 Group:		System/Servers
 License:	Apache License
 URL:		http://dev.iworks.at/mod_domaintree/
@@ -14,11 +14,11 @@ Source0:	http://dev.iworks.at/mod_domaintree/%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
-Requires(pre):	apache-conf >= 2.0.54
-Requires(pre):	apache >= 2.0.54
-Requires:	apache-conf >= 2.0.54
-Requires:	apache >= 2.0.54
-BuildRequires:  apache-devel >= 2.0.54
+Requires(pre):	apache-conf >= 2.2.4
+Requires(pre):	apache >= 2.2.4
+Requires:	apache-conf >= 2.2.4
+Requires:	apache >= 2.2.4
+BuildRequires:  apache-devel >= 2.2.4
 BuildRequires:	file
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -81,5 +81,3 @@ fi
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/httpd/modules.d/%{mod_conf}
 %attr(0755,root,root) %{_libdir}/apache-extramodules/%{mod_so}
 /var/www/html/addon-modules/*
-
-
