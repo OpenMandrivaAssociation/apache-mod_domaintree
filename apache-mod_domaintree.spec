@@ -20,6 +20,7 @@ Requires:	apache-conf >= 2.2.4
 Requires:	apache >= 2.2.4
 BuildRequires:  apache-devel >= 2.2.4
 BuildRequires:	file
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Mass virtual hosting module mapping host names to a directory tree.
