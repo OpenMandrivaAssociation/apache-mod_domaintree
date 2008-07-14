@@ -6,7 +6,7 @@
 Summary:	Mass virtual hosting module mapping host names to a directory tree
 Name:		apache-%{mod_name}
 Version:	1.6
-Release:	%mkrel 4
+Release:	%mkrel 5
 Group:		System/Servers
 License:	Apache License
 URL:		http://dev.iworks.at/mod_domaintree/
