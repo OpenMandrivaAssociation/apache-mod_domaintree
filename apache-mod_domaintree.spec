@@ -9,7 +9,7 @@ Version:	1.6
 Release:	12
 Group:		System/Servers
 License:	Apache License
-URL:		http://dev.iworks.at/mod_domaintree/
+URL:		https://dev.iworks.at/mod_domaintree/
 Source0:	http://dev.iworks.at/mod_domaintree/%{mod_name}-%{version}.tar.bz2
 Source1:	%{mod_conf}
 Requires(pre): rpm-helper
